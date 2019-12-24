@@ -11,7 +11,7 @@ T.get('direct_messages/events/list', function(err, data, response) {
         var counter = jsonData['events'][i]['message_create']['message_data'];
         //console.log(counter['text']);
         var myVar = counter['text'];
-        if (/[askworld]/i.test(myVar)){
+        if (/[stans]/i.test(myVar)){
         tweetPost(myVar);  
         }
         delDM(jsonData['events'][i]['id']);
